@@ -32,3 +32,23 @@ nav {
     background-size: cover;
     background-position: center;
 }
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-item {
+    height: 100px;
+    text-align: -webkit-center
+}
+
+.profile-img {
+    border: 1px solid;
+    height: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+}
