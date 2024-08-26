@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluent U</title>
+    <title>Fluentify</title>
     <link rel="stylesheet" href="css\style.css">
 </head>
 
@@ -14,6 +14,7 @@
         <!--header untuk insert logo-->
         <header>
             <div class="logo-icon"></div>
+            <!--<br><a href="#"><h1>Fluentify</h1></a>
         </header>
 
         <!--section untuk menu-->
@@ -32,8 +33,8 @@
     <main>
         <!--welcome text dan banner-->
         <article>
-            <h1>Hi user, Selamat datang di Fluent U</h1>
-            <p>Kuasai bahasa baru dengan mudah dan cepat</p>
+            <h1>Hi user, Welcome to Fluentify</h1>
+            <p>Communicate Confidently, Fluently.</p>
 
             </p>
             <div class="banner-image"></div>
@@ -42,48 +43,93 @@
         <hr />
 
         <!--our profile-->
-        <section id="profile">
+        <section id="language">
             <header>
-                <h1>Select your language</h1>
+                <h1>Choose your language</h1>
 
                 <!--untuk menampilkan menu profile-->
-                <section class="profile-container">
+                <section class="language-container">
 
-                    <div class="profile-item">
-                        <div class="profile-img">
-                            <h2>Software Engineer</h2>
+                    <div class="language">
+                        <div class="languag-img">
                         </div>
+                        <h2>English</h2>
                     </div>
 
                     <div class="profile-item">
                         <div class="profile-img">
-                            <h2>Software Engineer</h2>
                         </div>
+                        <h2>Chinese</h2>
                     </div>
 
                     <div class="profile-item">
                         <div class="profile-img">
-                            <h2>Software Engineer</h2>
                         </div>
+                        <h2>Japanese</h2>
                     </div>
-
+                    <div class="profile-item">
+                        <div class="profile-img">
+                        </div>
+                        <h2>German</h2>
+                    </div>
                 </section>
+            </header>
+        </section>
 
-        </section>
-        </header>
-        </section>
+        <!--Form -->
         <section>
-            <form>
-                Nama:
-
-            </form>
-            <div>
-
+            <header>
+                <h2>Message Us</h2>
+            </header>
+            <div class="form-container">
+                <form action="" method="get" class="form">
+                    <table>
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input type="text" name="name" placeholder="nama" /></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="start-date">Please select your preferred start date for the course.</label>
+                            </td>
+                            <td><input type="date" name="start-date" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="level">Which course package would you like to enroll in?</td>
+                            <td><input type="radio" name="level" value="Basic">Basic Course (Access to recordings
+                                only)</label></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="radio" name="level" value="Standard">Standard Course (Access to live
+                                classes and recordings)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="radio" name="level" value="Premium">Premium Course (Live classes,
+                                recordings, and one-on-one sessions)</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td><label for="learning-goal">Please tell us your learning goals or specific needs for this
+                                    course:</td>
+                        <tr>
+                            <td><textarea name="learning-goal"></textarea></td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="submit" value="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="table-appear">
+                Cek
             </div>
         </section>
     </main>
     <!--content end-->
-    <hr>
+
+    <hr />
 
 
     <!--footer start-->

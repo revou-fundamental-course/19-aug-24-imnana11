@@ -9,11 +9,11 @@ nav {
 
 /*tampilan logo*/
 .logo-icon {
-
-    background-image: url(https://pngtree.com/freebackground/book-open-and-a-globe-in-it_2770067.html);
-    height: 5rem;
-    width: 5rem;
+    background-image: url(assets/fluentify.jpg);
+  /*  height: 5rem;
+    width: 5rem;*/
     background-size: cover;
+    background-position: center;
     border-radius: 80%;
 }
 
@@ -52,25 +52,35 @@ h1 {
     font-weight: bold;
 }
 
-.profile-container {
+.language-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-.profile-item {
-    height: 100px;
-    text-align: -webkit-center
+.language-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    /* margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;*/
 }
 
-.profile-img {
-    border: 1px solid;
+.language-img {
+    border: 1px solid #000;
     height: 50px;
+    width: 50px;
     background-image: url(https://picsum.photos/200);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    width: 50px;
+    margin-bottom: 10px;
 }
+
 
 footer {
     text-align: end;
