@@ -1,68 +1,55 @@
+/*Tampilan navigasi bar*/
 nav {
-    display:flex;
+    background-color: #333333;
+    padding: 15px 30px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/*tampilan logo*/
 .logo-icon {
-    height: 48px;
-    width: 48px;
-    background-image: url(https://picsum.photos/100);
+
+    background-image: url(https://pngtree.com/freebackground/book-open-and-a-globe-in-it_2770067.html);
+    height: 5rem;
+    width: 5rem;
     background-size: cover;
-    border-radius: 50%;
+    border-radius: 80%;
 }
 
+/*tampilan menu*/
 .nav-container {
     display: flex;
+
 }
 
 .nav-item {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    padding: 10px 20px;
-    position: relative;
+    padding: 0 10px;
+    position: center;
     overflow: hidden;
     transition: 0.5s;
 
 }
 
-.nav-item::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    background-color: red;
-    width: 2px;
-    transition: width 0.3s ease;
+.nav-item:hover {
+    text-decoration: underline;
 }
 
-.nav-item:hover::after {
-    width: 100%;
-    animation: heartbeat116 1.5s infinite;
-
-}
-
-@keyframes heartbeat116 {
-
-    0%,
-    100% {
-        width: 100%;
-    }
-
-    50% {
-        width: 60%;
-
-    }
-}
-
+/*Tampilan banner*/
 .banner-image {
     height: 300px;
     background-image: url(https://picsum.photos/300);
     background-size: cover;
     background-position: center;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .profile-container {
