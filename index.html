@@ -13,14 +13,16 @@
     <nav>
         <!--header untuk insert logo-->
         <header>
-            <div class="logo-icon"></div>
-            <!--<br><a href="#"><h1>Fluentify</h1></a>
+            <div class="nav-logo-title">
+                <div class="logo-icon"></div>
+                <span class="nav-title">FLUENTIFY</span>
+            </div>
         </header>
 
         <!--section untuk menu-->
         <section class="nav-container">
             <a href="#" class="nav-item">Home</a>
-            <a href="#profile" class="nav-item">Profile</a>
+            <a href="#profile" class="nav-item">About Us</a>
             <a href="#" class="nav-item">Achievement</a>
             <a href="#" class="nav-item">Contact Us</a>
         </section>
@@ -33,7 +35,8 @@
     <main>
         <!--welcome text dan banner-->
         <article>
-            <h1>Hi user, Welcome to Fluentify</h1>
+            <h1>Hi <span id="username"></span>, Welcome to FLUENTIFY</h1>
+            
             <p>Communicate Confidently, Fluently.</p>
 
             </p>
@@ -45,30 +48,30 @@
         <!--our profile-->
         <section id="language">
             <header>
-                <h1>Choose your language</h1>
+                <h1>Our teacher</h1>
 
                 <!--untuk menampilkan menu profile-->
                 <section class="language-container">
 
                     <div class="language">
-                        <div class="languag-img">
+                        <div class="language-img">
                         </div>
                         <h2>English</h2>
                     </div>
 
-                    <div class="profile-item">
-                        <div class="profile-img">
+                    <div class="language">
+                        <div class="language-img">
                         </div>
                         <h2>Chinese</h2>
                     </div>
 
-                    <div class="profile-item">
-                        <div class="profile-img">
+                    <div class="language">
+                        <div class="language-img">
                         </div>
                         <h2>Japanese</h2>
                     </div>
-                    <div class="profile-item">
-                        <div class="profile-img">
+                    <div class="language">
+                        <div class="language-img">
                         </div>
                         <h2>German</h2>
                     </div>
@@ -77,55 +80,50 @@
         </section>
 
         <!--Form -->
-        <section>
-            <header>
-                <h2>Message Us</h2>
-            </header>
+        <section id="message-us">
             <div class="form-container">
-                <form action="" method="get" class="form">
-                    <table>
-                        <tr>
-                            <td><label for="name">Name:</label></td>
-                            <td><input type="text" name="name" placeholder="nama" /></td>
-                        </tr>
-                        <tr>
-                            <td> <label for="start-date">Please select your preferred start date for the course.</label>
-                            </td>
-                            <td><input type="date" name="start-date" /></td>
-                        </tr>
-                        <tr>
-                            <td><label for="level">Which course package would you like to enroll in?</td>
-                            <td><input type="radio" name="level" value="Basic">Basic Course (Access to recordings
-                                only)</label></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="radio" name="level" value="Standard">Standard Course (Access to live
-                                classes and recordings)</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="radio" name="level" value="Premium">Premium Course (Live classes,
-                                recordings, and one-on-one sessions)</td>
-                        </tr>
-                        </tr>
-                        <tr>
-                            <td><label for="learning-goal">Please tell us your learning goals or specific needs for this
-                                    course:</td>
-                        <tr>
-                            <td><textarea name="learning-goal"></textarea></td>
-                        </tr>
-                        </tr>
-                        <tr>
-                            <td><input type="submit" name="submit" value="submit"></td>
-                        </tr>
-                    </table>
+                <header>
+                    <h2>Message Us</h2>
+                </header>
+
+                <form name="message-form" onsubmit="return validateForm()">
+
+                    <!--input name-->
+                    <label for="username">Name:</label>
+                    <input placeholder="username" type="text" name="username" required />
+                    <br />
+
+                    <!--input date-->
+                    <label for="birth-date"> Tanggal lahir </label>
+                    <input type="date" name="birth-date" required />
+                    <br />
+
+                    <!--input jenis kelamin-->
+                    <label for="gender">Jenis Kelamin:</label>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="fenale" name="gender" value="female" />
+                    <label for="female">Perempuan</label>
+                    <br />
+
+                    <!--input pesan-->
+                    <label for="message">Pesan:</label>
+                    <textarea placeholder="Pesan" name="message" required></textarea>
+                    <br />
+                    
+                    <input type="submit" name="submit" value="submit">
                 </form>
             </div>
-            <div class="table-appear">
-                Cek
+            <div id="output">
+                <h2>Output</h2>
+                <p><strong>Nama:</strong> <span id="sender-full-name"></span></p>
+                <p><strong>Tanggal Lahir:</strong> <span id="sender-birth-date"></span></p>
+                <p><strong>Jenis Kelamin:</strong> <span id="sender-gender"></span></p>
+                <p><strong>Pesan:</strong> <span id="sender-message"></span></p>
             </div>
+            <script src="js/script.js"></script>
         </section>
+       
     </main>
     <!--content end-->
 
