@@ -1,20 +1,36 @@
 /*Tampilan navigasi bar*/
 nav {
-    background-color: #333333;
+    background-color: #184B8C;
     padding: 15px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/*tampilan judul dan logo*/
+.nav-logo-title{
+    display: flex;
+    align-items: center;
+}
+
 
 /*tampilan logo*/
 .logo-icon {
-    background-image: url(assets/fluentify.jpg);
-  /*  height: 5rem;
-    width: 5rem;*/
-    background-size: cover;
+    background-image: url(../assets/logo.png);
+    height: 5rem;
+    width: 5rem;
+    background-size: contain;
     background-position: center;
     border-radius: 80%;
+    display: flex;
+
+}
+/*tampilan judul */
+.nav-title {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
 }
 
 /*tampilan menu*/
@@ -29,7 +45,7 @@ nav {
     font-size: 20px;
     font-weight: bold;
     padding: 0 10px;
-    position: center;
+    position: end;
     overflow: hidden;
     transition: 0.5s;
 
@@ -81,7 +97,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+/*Tampilan message us*/
 
 footer {
     text-align: end;
+    background-color: #184B8C;
+
 }
