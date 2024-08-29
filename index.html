@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluentify</title>
+    <title>International School Owl</title>
     <link rel="stylesheet" href="css\style.css">
 </head>
 
@@ -15,16 +15,16 @@
         <header>
             <div class="nav-logo-title">
                 <div class="logo-icon"></div>
-                <span class="nav-title">FLUENTIFY</span>
+                <span class="nav-title"> International School Owl </span>
             </div>
         </header>
 
         <!--section untuk menu-->
         <section class="nav-container">
             <a href="#" class="nav-item">Home</a>
-            <a href="#profile" class="nav-item">About Us</a>
-            <a href="#" class="nav-item">Achievement</a>
-            <a href="#" class="nav-item">Contact Us</a>
+            <a href="#about-us" class="nav-item">About Us</a>
+            <a href="#our-teacher" class="nav-item">Our Teacher</a>
+            <a href="#contact-us" class="nav-item">Contact Us</a>
         </section>
 
     </nav>
@@ -35,106 +35,136 @@
     <main>
         <!--welcome text dan banner-->
         <article>
-            <h1>Hi <span id="username"></span>, Welcome to FLUENTIFY</h1>
-            
-            <p>Communicate Confidently, Fluently.</p>
+            <h1>Hi <span id="welcome-message"></span>, Welcome to International School Owl</h1>
 
-            </p>
-            <div class="banner-image"></div>
+            <p>The boarding school in Germany.</p>
+
+
+            <div class="slide-banner">
+                <div class="slides">
+                    <div class="banner-image img-1">
+
+                    </div>
+                    <div class="banner-image img-2">
+
+                    </div>
+                    <div class="banner-image img-3">
+
+                    </div>
+                </div>
+            </div>
         </article>
 
         <hr />
-
+        <section id="about-us-container">
+            <div class="about-us-content">
+                <h1>About Us</h1>
+                <article>
+                    With exceptional teaching and the belief that nothing goes unachieved when students approach the
+                    unknown
+                    with curiosity, we instil values and skills that prepare them for a global and interconnected
+                    future.
+                </article>
+            </div>
+        </section>
+        <hr />
         <!--our profile-->
-        <section id="language">
+        <section id="our-teacher">
             <header>
-                <h1>Our teacher</h1>
+                <h1>Our Lecturer</h1>
 
-                <!--untuk menampilkan menu profile-->
-                <section class="language-container">
+                <!--untuk menampilkan menu teacher-->
+                <section class="teacher-container">
 
-                    <div class="language">
-                        <div class="language-img">
+                    <div class="teacher">
+                        <div class="teacher-img teacher-a">
                         </div>
-                        <h2>English</h2>
+                        <h2 class="teacher-name">Tianxi Yang</h2>
                     </div>
 
-                    <div class="language">
-                        <div class="language-img">
+                    <div class="teacher">
+                        <div class="teacher-img teacher-b">
                         </div>
-                        <h2>Chinese</h2>
+                        <h2 class="teacher-name">Jacob Groshek</h2>
                     </div>
 
-                    <div class="language">
-                        <div class="language-img">
+                    <div class="teacher">
+                        <div class="teacher-img teacher-c">
                         </div>
-                        <h2>Japanese</h2>
+                        <h2 class="teacher-name">Mary Sarah</h2>
                     </div>
-                    <div class="language">
-                        <div class="language-img">
+                    <div class="teacher">
+                        <div class="teacher-img teacher-d">
                         </div>
-                        <h2>German</h2>
+                        <h2 class="teacher-name">James Katz</h2>
                     </div>
                 </section>
             </header>
         </section>
 
         <!--Form -->
-        <section id="message-us">
-            <div class="form-container">
-                <header>
-                    <h2>Message Us</h2>
-                </header>
+        <section id="contact-us">
+            <h1>Contact Us</h1>
+            <div class="message-container">
 
-                <form name="message-form" onsubmit="return validateForm()">
+                <div class="form-container">
+                    <header>
+                        <h2>Message Us</h2>
+                    </header>
 
-                    <!--input name-->
-                    <label for="username">Name:</label>
-                    <input placeholder="username" type="text" name="username" required />
-                    <br />
+                    <form id="message-form" name="message-form">
 
-                    <!--input date-->
-                    <label for="birth-date"> Tanggal lahir </label>
-                    <input type="date" name="birth-date" required />
-                    <br />
+                        <!--input name-->
+                        <label for="username">Name:</label>
+                        <input placeholder="username" type="text" name="username" required />
+                        <br />
 
-                    <!--input jenis kelamin-->
-                    <label for="gender">Jenis Kelamin:</label>
-                    <input type="radio" id="male" name="gender" value="male" />
-                    <label for="male">Laki-laki</label>
-                    <input type="radio" id="fenale" name="gender" value="female" />
-                    <label for="female">Perempuan</label>
-                    <br />
+                        <!--input date-->
+                        <label for="birth-date"> Tanggal lahir </label>
+                        <input type="date" name="birth-date" required />
+                        <br />
 
-                    <!--input pesan-->
-                    <label for="message">Pesan:</label>
-                    <textarea placeholder="Pesan" name="message" required></textarea>
-                    <br />
-                    
-                    <input type="submit" name="submit" value="submit">
-                </form>
+                        <!--input jenis kelamin-->
+                        <div class="jenis-kelamin">
+                            <label>Jenis Kelamin:</label>
+                            <label for="male"><input type="radio" id="male" name="gender"
+                                    value="male" />Laki-laki</label>
+                            <label for="female"><input type="radio" id="female" name="gender"
+                                    value="female" />Perempuan</label>
+                        </div>
+                        <br />
+
+                        <!--input pesan-->
+                        <label for="message">Pesan:</label>
+                        <textarea placeholder="Pesan" name="message" required></textarea>
+                        <br />
+
+                        <input type="submit" name="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="output-container">
+                    <h2>Output</h2>
+                    <p><strong>Nama:</strong> <span id="sender-full-name"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="sender-birth-date"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="sender-gender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="sender-message"></span></p>
+                </div>
+                <script src="js/script.js"></script>
+
             </div>
-            <div id="output">
-                <h2>Output</h2>
-                <p><strong>Nama:</strong> <span id="sender-full-name"></span></p>
-                <p><strong>Tanggal Lahir:</strong> <span id="sender-birth-date"></span></p>
-                <p><strong>Jenis Kelamin:</strong> <span id="sender-gender"></span></p>
-                <p><strong>Pesan:</strong> <span id="sender-message"></span></p>
-            </div>
-            <script src="js/script.js"></script>
         </section>
-       
     </main>
     <!--content end-->
 
     <hr />
 
 
-    <!--footer start-->
-    <footer>
-        <p>Created by Ilana Fedelia</p>
-    </footer>
-    <!--footer end-->
+
 </body>
+<!--footer start-->
+<footer>
+    <p>Created by Ilana Fedelia</p>
+</footer>
+<!--footer end-->
 
 </html>

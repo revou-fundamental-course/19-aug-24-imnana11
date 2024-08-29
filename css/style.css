@@ -1,14 +1,14 @@
 /*Tampilan navigasi bar*/
 nav {
-    background-color: #184B8C;
+    background-color: rgb(162, 163, 223);
     padding: 15px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 /*tampilan judul dan logo*/
-.nav-logo-title{
+.nav-logo-title {
     display: flex;
     align-items: center;
 }
@@ -16,19 +16,20 @@ nav {
 
 /*tampilan logo*/
 .logo-icon {
-    background-image: url(../assets/logo.png);
-    height: 5rem;
-    width: 5rem;
+    background-image: url(../assets/logo-international-school-owl.png);
+    height: 120px;
+    width: 120px;
     background-size: contain;
     background-position: center;
-    border-radius: 80%;
+    background-repeat: no-repeat;
     display: flex;
 
 }
+
 /*tampilan judul */
 .nav-title {
     font-size: 20px;
-    color: white;
+    color: black;
     font-weight: bold;
     margin: 0;
 }
@@ -40,9 +41,10 @@ nav {
 }
 
 .nav-item {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     padding: 0 10px;
     position: end;
@@ -56,51 +58,251 @@ nav {
 }
 
 /*Tampilan banner*/
+.slide-banner {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform -.5s ease-in-out;
+}
+
 .banner-image {
-    height: 300px;
-    background-image: url(https://picsum.photos/300);
+    width: 100%;
+    height: 100%;
+    flex: 1;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
-h1 {
-    font-family: sans-serif;
-    font-weight: bold;
+.img-1 {
+    background-image: url(../assets/360_F_889973324_2TwlDS2ZfyDO5ylYuAGE4VprGzeG75OR.jpg);
+
 }
 
-.language-container {
+.img-2 {
+    background-image: url(../assets/info-evening-440x450.jpg);
+
+}
+
+.img-3 {
+    background-image: url(../assets/rmit-aus-1440x450.jpg);
+
+}
+/*tampilan about us*/
+
+.about-us-container {
+    background-color: #eef2f3;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.about-us {
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+article {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+/*tampilan our teacher*/
+
+.teacher-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    margin: 20px 0;
+    background-color: #eef2f3;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.language-item {
+.teacher-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     height: 150px;
-    /* margin-top: 10px;
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 16px;
     font-weight: bold;
-    color: #333;*/
+    color: #444;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.language-img {
-    border: 1px solid #000;
-    height: 50px;
-    width: 50px;
-    background-image: url(https://picsum.photos/200);
+.teacher-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-img {
+    border: 2px solid #333;
+    height: 80px;
+    width: 80px;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.teacher-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.teacher-a {
+    background-image: url(../assets/teacher-a.jpg);
+
+}
+
+.teacher-b {
+    background-image: url(../assets/teacher\ b.jpg);
+}
+
+.teacher-c {
+    background-image: url(../assets/teacher-c.jpg);
+}
+
+.teacher-d {
+    background-image: url(../assets/teacher\ d.jpg);
+}
+
+.teacher-img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #666;
+}
+
+h1,
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /*Tampilan message us*/
 
-footer {
-    text-align: end;
-    background-color: #184B8C;
+.message-container,
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    justify-content: space-between;
 
+}
+
+/*Tampilan form dan output*/
+.form-container,
+.output-container {
+    width: 45%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/*Tampilan label form*/
+label {
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+/*Tampilan input area*/
+textarea,
+input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus,
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*tampilan jenis kelamin*/
+.jenis-kelamin {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.jenis-kelamin label {
+    inline-size: auto;
+    display: inherit;
+    margin-right: 15px;
+}
+
+/*tampilan footer*/
+footer {
+    background-color: #4a4a8c;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .teacher-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .message-container,
+    .contact-us {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-container,
+    .output-container {
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
